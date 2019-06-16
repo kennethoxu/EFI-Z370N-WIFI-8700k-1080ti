@@ -50,7 +50,7 @@ You probably don't need all of these, experiment.
 
 
 ## 7) Post Installation
-- Generate your SerialNumber and SMUUID using `clover configurator`.
+- Generate your SerialNumber and SMUUID using `clover configurator`. Don't share this. You will need to copy it around for the next steps.
 - [Follow this to install nvidia drivers](https://hackintosher.com/guides/properly-install-nvidia-drivers-high-sierra-10-13/)
-- Fix sleep by copying the `config.plist` from [here](Post-Installed-APFS-EFI/EFI/CLOVER/config.plist)
+- Fix sleep by copying the `config.plist` from [here](Post-Installed-APFS-EFI/EFI/CLOVER/config.plist). Messing around with darkwake didn't work for me YMMV, I copied the above config.plist and it works.
 - The built in WIFI and bluetooth is not supported, buy a [BCM94352Z](https://www.ebay.com/itm/New-BCM94352Z-AC-WIFI-BT-WLAN-CARD-For-LENOVO-N50-70-B50-70-Y40-70-B40-80-Touch/272100347722). Kext's are included to make this work [here](Post-Installed-APFS-EFI/EFI/CLOVER/kexts/Other/)
