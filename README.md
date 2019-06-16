@@ -1,4 +1,4 @@
-# Z370N-WIFI-8700k-1080ti High Sierra
+# Z370N-WIFI-8700k-1080ti High Sierra Hackintosh
 
  Since we're using a 1080ti, we need to get high Sierra as its likely the last OS to support nvidia drivers. Don't use Unibeast or Multibeast, they are garbage.
  
