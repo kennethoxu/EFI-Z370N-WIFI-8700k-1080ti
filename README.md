@@ -50,6 +50,7 @@ You probably don't need all of these, experiment.
 
 
 ## 7) Post Installation
+Boot your hackintosh from the EFI on your APFS partition. This will be how you boot from now on. You can modify it the same way as we did the USB one, through `clover configurator`. We're gonna modify it below for better usage.
 - Generate your SerialNumber and SMUUID using `clover configurator`. Don't share this. You will need to copy it around for the next steps.
 - [Follow this to install nvidia drivers](https://hackintosher.com/guides/properly-install-nvidia-drivers-high-sierra-10-13/)
 - Fix sleep by copying the `config.plist` from [here](Post-Installed-APFS-EFI/EFI/CLOVER/config.plist). Messing around with darkwake didn't work for me YMMV, I copied the above config.plist and it works.
