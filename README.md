@@ -1,8 +1,18 @@
-# GIGABYTE Z370N WIFI 8700k 1080ti High Sierra Hackintosh
+# Z370N WIFI 8700k 1080ti High Sierra Hackintosh
 
  Since we're using a 1080ti, we need to get high Sierra as its likely the last OS to support nvidia drivers. Don't use Unibeast or Multibeast, they are garbage.
  
  ![Geek bench](https://i.imgur.com/n8BPGLl.png)
+
+## Specs
+- Gigabyte Z370N Wifi
+- EVGA 1080Ti SC Black Edition
+- Intel Core i7-8700k
+- Corsair SF600
+- Samsung 960 EVO NVMe
+- Corsair LPX 32gb (2x16gb) 3200 MHZ
+- Dancase A4 v2
+- Noctua NH-L9I
  
 ## 0) Prerequisites
 - 1-3 USB Drives (8+ gb), 3 for more flexibility
