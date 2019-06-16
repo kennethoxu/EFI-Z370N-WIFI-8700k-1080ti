@@ -2,8 +2,7 @@
 
  Since we're using a 1080ti, we need to get high Sierra as its likely the last OS to support nvidia drivers. Don't use Unibeast or Multibeast, they are garbage.
  
- ![Geek bench]
- (https://i.imgur.com/n8BPGLl.png)
+ ![Geek bench](https://i.imgur.com/n8BPGLl.png)
  
 ## 0) Prerequisites
 - 1-3 USB Drives (8+ gb), 3 for more flexibility
