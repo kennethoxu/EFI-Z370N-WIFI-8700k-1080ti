@@ -28,7 +28,9 @@
 
 ## 4) BIOS Settings pre-install
 You probably don't need all of these, experiment.
-- Save & Exit → Load Optimized Defaults
+- (IMPORTANT) Save & Exit → Load Optimized Defaults
+- (IMPORTANT) Peripherals → USB Configuration → XHCI Hand-off : Enabled
+- (IMPORTANT) Chipset → Vt-d : Disabled
 - M.I.T. → Advanced Memory Settings  Extreme Memory Profile(X.M.P.) : Profile1
 - BIOS → Fast Boot : Disabled
 - BIOS → LAN PXE Boot Option ROM : Disabled
@@ -36,8 +38,6 @@ You probably don't need all of these, experiment.
 - Peripherals → Trusted Computing → Security Device Support : Disabled
 - Peripherals → Network Stack Configuration → Network Stack : Disabled
 - Peripherals → USB Configuration → Legacy USB Support : Auto
-- Peripherals → USB Configuration → XHCI Hand-off : Enabled
-- Chipset → Vt-d : Disabled
 - Chipset → Wake on LAN Enable : Disabled
 - Chipset → IOAPIC 24-119 Entries : Enabled
 - Peripherals → Initial Display Output : PCIe 1 Slot
@@ -49,4 +49,8 @@ You probably don't need all of these, experiment.
 
 ## 7) Post Installation
 - [Follow this to install nvidia drivers](https://hackintosher.com/guides/properly-install-nvidia-drivers-high-sierra-10-13/)
+- Fix adding copying the `config.plist` from (here)[Post-Installed-APFS-EFI/EFI/CLOVER/config.plist]
+- The built in WIFI and bluetooth is not supported, buy a [BCM94352Z](https://www.ebay.com/itm/New-BCM94352Z-AC-WIFI-BT-WLAN-CARD-For-LENOVO-N50-70-B50-70-Y40-70-B40-80-Touch/272100347722). Kext's are included to make this work (here0[Post-Installed-APFS-EFI/EFI/CLOVER/kexts/Other/]
+
+
 ## 
