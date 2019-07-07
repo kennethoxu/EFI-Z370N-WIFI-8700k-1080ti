@@ -65,3 +65,17 @@ Boot your hackintosh from the EFI on your APFS partition. This will be how you b
 - [Follow this to install nvidia drivers](https://hackintosher.com/guides/properly-install-nvidia-drivers-high-sierra-10-13/)
 - Fix sleep by copying the `config.plist` from [here](Post-Installed-APFS-EFI/EFI/CLOVER/config.plist). Messing around with darkwake didn't work for me YMMV, I copied the above config.plist and it works.
 - The built in WIFI and bluetooth is not supported, buy a [BCM94352Z](https://www.ebay.com/itm/New-BCM94352Z-AC-WIFI-BT-WLAN-CARD-For-LENOVO-N50-70-B50-70-Y40-70-B40-80-Touch/272100347722). Kext's are included to make this work [here](Post-Installed-APFS-EFI/EFI/CLOVER/kexts/Other/)
+
+## 8) WIFI 
+Buy and replace stock wifi card with BCM94352Z. Theres 2 screws holding in the module in the motherboard and 1 keeping the enclosure attached. You need to wiggle the enclosure to get it out after removing the inner screw. Follow [the instructions](https://hackintosher.com/forums/thread/enabling-third-party-broadcom-wlan-802-11a-b-g-n-wifi-bluetooth-cards-on-a-hackintosh-bcm94352z-bcm94322.6/) to get the appropriate kexts. Make sure you follow the steps at the bottom for moving kexts to Library/Extensions, else risk stability issues.
+
+## Addenum: Moving disk space from windows to OSX on dual boot drive
+Its easier to keep the OS installations separate, however if you have a NVME SSD like me and prefer both OS's on the same ssd for speed reasons, this is how you to do it.
+- Shrink partition from windows, leave it as unallocated space, do not format
+- Using ubuntu Gparted, move the partition next to OSX partition, if applicable, delete the 16 mb microsoft reserved partition if it cannot be moved
+- Grow the osx partition to include the new space:
+- `diskutil list`
+- `diskutil apfs resizeContainer diskOs2 200g` Replace 200g with total number you want your osx partition to be.
+
+
+
