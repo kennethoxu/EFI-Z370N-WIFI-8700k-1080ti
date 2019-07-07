@@ -75,7 +75,7 @@ Its easier to keep the OS installations separate, however if you have a NVME SSD
 - Using ubuntu Gparted, move the partition next to OSX partition, if applicable, delete the 16 mb microsoft reserved partition if it cannot be moved
 - Grow the osx partition to include the new space:
 - `diskutil list`
-- `diskutil apfs resizeContainer diskOs2 200g` Replace 200g with total number you want your osx partition to be.
+- `diskutil apfs resizeContainer diskOs2 200g` Replace 200g with total number you want your osx partition to be. Replace disokOs2 with the appropriate partition as referenced from `disktuil list`
 
 
 
